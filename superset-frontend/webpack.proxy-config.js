@@ -30,6 +30,13 @@ const parsedEnvArg = () => {
 };
 
 const { supersetPort = 8088, superset: supersetUrl = null } = parsedEnvArg();
+console.warn(
+  '---------------',
+  'SUPERSET_PORT: ',
+  supersetPort,
+  'SUPERSET_URL: ',
+  supersetUrl,
+);
 const backend = (supersetUrl || `http://localhost:${supersetPort}`).replace(
   '//+$/',
   '',
