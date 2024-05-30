@@ -311,11 +311,11 @@ export function Menu({
                 to={brand.path}
                 tabIndex={-1}
               >
-                TEST ass<img src={brand.icon} alt={brand.alt} />
+                <img src={brand.icon} alt={brand.alt} />
               </GenericLink>
             ) : (
               <a className="navbar-brand" href={brand.path} tabIndex={-1}>
-                TEST_2<img src={brand.icon} alt={brand.alt} />
+                <img src={brand.icon} alt={brand.alt} />
               </a>
             )}
           </Tooltip>
